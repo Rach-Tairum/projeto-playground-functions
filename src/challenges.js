@@ -8,7 +8,7 @@ function compareTrue(par1, par2) {
   }
 }
 
-// Desafio 2
+// Desafio 2 - OK
 function calcArea(base, height) {
   let areaTriangulo = (base * height) / 2;
 
@@ -16,9 +16,17 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(frase) {
+  let array = frase.split (' ');
+
+  if (array.lenght > 4) {
+    let palavra = array.join('');
+      array.push(palavra);
+  };
+
+  return array;
 }
+
 
 // Desafio 4
 function concatName() {
