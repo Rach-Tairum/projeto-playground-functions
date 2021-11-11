@@ -24,10 +24,10 @@ function splitSentence(frase) {
   return array;
 }
 
-// Desafio 4
+// Desafio 4 - OK
 function concatName(array) {
-  
-  let concat = [array[0], array[array.length -1]];
+
+  let concat = [array[array.length -1], array[0]];
   let frase = concat.join()
 
   return frase
