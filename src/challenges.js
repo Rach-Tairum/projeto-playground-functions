@@ -32,7 +32,6 @@ function concatName(array) {
   return frase
 };
 
-console.log (concatName (['captain', 'my', 'captain']))
 
 // Desafio 5 - OK
 function footballPoints(wins, ties) {
@@ -61,8 +60,6 @@ function highestCount(numbers) {
     }
     return contador
 }
-
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7]))
 
 // Desafio 7 - OK
 function catAndMouse(mouse, cat1, cat2) {
@@ -100,13 +97,61 @@ function fizzBuzz(numeros) {
     return novoBuzz
   }
 
-
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  let codificada = '';
+
+  for (let index = 0; index < string.length; index += 1){
+    switch (string[index]) {
+      case 'a':
+        codificada += 1;
+      break;
+      case 'e':
+        codificada += 2;
+      break;
+      case 'i':
+        codificada += 3;
+      break;
+      case 'o':
+        codificada += 4;
+      break;
+      case 'u':
+        codificada += 5;
+      break;
+      default:
+        codificada += string[index];
+      break;
+    }
+  }
+return codificada;
 }
-function decode() {
-  // seu código aqui
+
+function decode(codigo) {
+  let decodificada = '';
+
+  for (let index = 0; index < codigo.length; index += 1){
+    switch (codigo[index]) {
+      case '1':
+        decodificada += 'a';
+      break;
+      case '2':
+        decodificada += 'e';
+      break;
+      case '3':
+        decodificada += 'i';
+      break;
+      case '4':
+        decodificada += 'o';
+      break;
+      case '5':
+        decodificada += 'u';
+      break;
+      default:
+        decodificada += codigo[index];
+      break;
+    }
+  }
+return decodificada;
 }
 
 module.exports = {
