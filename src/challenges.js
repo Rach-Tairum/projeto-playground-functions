@@ -1,4 +1,4 @@
-// Desafio 1
+// Desafio 1 - OK
 function compareTrue(par1, par2) {
   
   if (par1 === 'true' || par1 === 'True' && par2 === 'true' || par2 === 'True'){
@@ -9,8 +9,10 @@ function compareTrue(par1, par2) {
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  let areaTriangulo = (base * height) / 2;
+
+  return areaTriangulo
 }
 
 // Desafio 3
