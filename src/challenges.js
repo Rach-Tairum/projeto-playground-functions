@@ -43,10 +43,26 @@ function footballPoints(wins, ties) {
   return pontos
 }
 
-// Desafio 6
+// Desafio 6 -Ok
 function highestCount(numbers) {
-  
+
+  let valor = numbers[0]; // independente dos números do meu array, ele começa a comparação do primeiro termo do meu array, assim evita que valores negativos não sejam abrangidos.
+  let contador = 0; // recebe quantas vezes meu valor maior aparece
+
+  for (let index in numbers) { 
+    if (valor < numbers[index]) { // Meu número no ponto enque está o index é maior que o número que está no valor?
+      valor = numbers[index]; // Se sim, esse número será meu novo valor
+    }
+    }
+    for (let i in numbers) {  // Quantas vezes esse maior valor aparece?
+      if (valor === numbers[i]){ // Se o número do meu valor for igual ao número no ponto em que está o i, acrescente uma unidade ao contador
+        contador += 1
+      }
+    }
+    return contador
 }
+
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]))
 
 // Desafio 7 - OK
 function catAndMouse(mouse, cat1, cat2) {
