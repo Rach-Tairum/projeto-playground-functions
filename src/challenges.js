@@ -15,18 +15,12 @@ function calcArea(base, height) {
   return areaTriangulo
 }
 
-// Desafio 3
+// Desafio 3 - OK
 function splitSentence(frase) {
   let array = frase.split (' ');
 
-  if (array.lenght > 4) {
-    let palavra = array.join('');
-      array.push(palavra);
-  };
-
   return array;
 }
-
 
 // Desafio 4
 function concatName() {
