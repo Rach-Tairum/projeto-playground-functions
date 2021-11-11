@@ -1,10 +1,10 @@
 // Desafio 1 - OK
 function compareTrue(par1, par2) {
   
-  if (par1 === 'true' || par1 === 'True' && par2 === 'true' || par2 === 'True'){
-    return 'true'
+  if (par1 === true && par2 === true){
+    return true
   } else {
-    return 'false'
+    return false
   }
 }
 
@@ -27,12 +27,12 @@ function splitSentence(frase) {
 // Desafio 4 - OK
 function concatName(array) {
 
-  let concat = [array[array.length -1], array[0]];
-  let frase = concat.join()
+  let frase = array[array.length -1] + ', ' + array[0];
 
   return frase
 };
 
+console.log (concatName (['captain', 'my', 'captain']))
 
 // Desafio 5
 function footballPoints() {
