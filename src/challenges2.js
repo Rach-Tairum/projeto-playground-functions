@@ -42,7 +42,7 @@ function generatePhoneNumber(telefone) {
         }
       }
     }
-  } //Ok daqui pra baixo
+  } 
   numeroTelefone = '('+ telefone[0] + telefone[1] + ') ' + telefone[2] + telefone[3] + telefone[4] + telefone[5] + telefone[6] + '-' + telefone[7] + telefone[8] + telefone[9] + telefone[10];
   return numeroTelefone
 }
@@ -66,10 +66,34 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 
-// Desafio 13
-function hydrate() {
-  // seu código aqui
+// Desafio 13. Referências:
+// https://stackoverflow.com/questions/1623221/how-to-find-a-number-in-a-string-using-javascript
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/match
+// https://www.alura.com.br/artigos/convertendo-string-para-numero-em-javascript?gclid=Cj0KCQiA4b2MBhD2ARIsAIrcB-R2hm1KcxYiAZq8Q91pzYSSDTnhDYvN-Jfhbciy-TFAp07y9RQaIqYaAum2EALw_wcB
+
+function hydrate(pedido) {
+  let quantiBebidas = /\d/g; // declaro o que eu quero capturar na string, no caso os digitos (d) que nela aparecem o g após a expressão diz q a analise será feita de forma global em toda a string e que retornará todas as correspondências da busca.
+  let array = pedido.match (quantiBebidas) // retorna a correspondencia entre a string e a expressão regular
+
+  let numeroBebidas = [];
+  for (let a in array){
+    numeroBebidas.push (parseInt(array[a])) //transforma strings em números
+  }
+  
+  let sum = 0;
+  for (let i in numeroBebidas){
+    sum = sum + numeroBebidas[i];
+  }
+  if (sum === 1){
+    return sum + ' copo de água'
+  } else {
+    return sum + ' copos de água'
+  }
 }
+
 
 module.exports = {
   generatePhoneNumber,
