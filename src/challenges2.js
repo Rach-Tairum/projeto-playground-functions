@@ -49,9 +49,22 @@ function generatePhoneNumber(telefone) {
 
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  let veriLineA = lineB +lineC;
+  let veriLineB = lineA + lineC;
+  let veriLineC = lineA + lineB;
+  let diferencaA = Math.abs(lineB - lineC);
+  let diferencaB = Math.abs(lineA - lineC);
+  let diferencaC = Math.abs(lineA - lineB)
+
+
+  if (lineA < veriLineA && lineB < veriLineB && lineC < veriLineC && lineA > diferencaA && lineB > diferencaB && lineC > diferencaC) {
+    return true;
+  } else {
+    return false;
+  }
 }
+
 
 // Desafio 13
 function hydrate() {
