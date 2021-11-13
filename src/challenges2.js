@@ -25,7 +25,7 @@ function generatePhoneNumber(telefone) {
   let numeroTelefone = '';
   
   if (telefone.length !== 11){
-    return 'Array com tamanho incorreto';
+    return 'Array com tamanho incorreto.';
   } else {
     for (let index in telefone){
       let numero = [];
