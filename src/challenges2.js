@@ -21,9 +21,32 @@ return enteresses;
 
 
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
+function generatePhoneNumber(telefone) {
+  let numeroTelefone = '';
+  
+  if (telefone.length !== 11){
+    return 'Array com tamanho incorreto';
+  } else {
+    for (let index in telefone){
+      let numero = [];
+      if (telefone[index] < 0 || telefone[index] > 9){
+        return 'não é possível gerar um número de telefone com esses valores'; // OK
+      } else {
+        for (let i in telefone) {
+          if (telefone[index] === telefone[i]){
+            numero.push (telefone[i])
+          }
+          if (numero.length >= 3){
+            return 'não é possível gerar um número de telefone com esses valores';
+          }
+        }
+      }
+    }
+  } //Ok daqui pra baixo
+  numeroTelefone = '('+ telefone[0] + telefone[1] + ') ' + telefone[2] + telefone[3] + telefone[4] + telefone[5] + telefone[6] + '-' + telefone[7] + telefone[8] + telefone[9] + telefone[10];
+  return numeroTelefone
 }
+
 
 // Desafio 12
 function triangleCheck() {
