@@ -1,4 +1,4 @@
-// Desafio 1 - OK
+// Desafio 1 - OK - Crie uma função usando o operador &&
 function compareTrue(par1, par2) {
   if (par1 === true && par2 === true) {
     return true;
@@ -7,28 +7,28 @@ function compareTrue(par1, par2) {
   }
 }
 
-// Desafio 2 - OK
+// Desafio 2 - OK - Crie uma função que calcule a área de um triângulo
 function calcArea(base, height) {
   let areaTriangulo = (base * height) / 2;
 
   return areaTriangulo;
 }
 
-// Desafio 3 - OK
+// Desafio 3 - OK - Crie uma função que divida a frase
 function splitSentence(frase) {
   let array = frase.split(' ');
 
   return array;
 }
 
-// Desafio 4 - OK
+// Desafio 4 - OK - Crie uma função que use concatenação de strings
 function concatName(array) {
   let frase = array[array.length - 1] + ', ' + array[0];
 
   return frase;
 }
 
-// Desafio 5 - OK
+// Desafio 5 - OK - Crie uma função que calcule a quantidade de pontos no futebol
 function footballPoints(wins, ties) {
   let pontosVitorias = wins * 3;
   let pontos = pontosVitorias + ties;
@@ -36,7 +36,7 @@ function footballPoints(wins, ties) {
   return pontos;
 }
 
-// Desafio 6 -Ok
+// Desafio 6 -Ok - Crie uma função que calcule a repetição do maior número
 function highestCount(numbers) {
   let valor = numbers[0]; // independente dos números do meu array, ele começa a comparação do primeiro termo do meu array, assim evita que valores negativos não sejam abrangidos.
   let contador = 0; // recebe quantas vezes meu valor maior aparece
@@ -57,7 +57,7 @@ function highestCount(numbers) {
   return contador;
 }
 
-// Desafio 7 - OK
+// Desafio 7 - OK - Crie uma função de Caça ao Rato
 function catAndMouse(mouse, cat1, cat2) {
   let distCat1 = mouse - cat1;
   let distCat2 = mouse - cat2;
@@ -74,7 +74,7 @@ function catAndMouse(mouse, cat1, cat2) {
   }
 }
 
-// Desafio 8 - OK
+// Desafio 8 - OK - Crie uma função FizzBuzz
 function fizzBuzz(numeros) {
   let novoBuzz = [];
 
@@ -92,7 +92,7 @@ function fizzBuzz(numeros) {
   return novoBuzz;
 }
 
-// Desafio 9
+// Desafio 9 - OK - Crie uma função que Codifique e Decodifique
 function encode(string) {
   let codificada = '';
 

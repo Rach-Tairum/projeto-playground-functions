@@ -1,6 +1,5 @@
-// Desafio 10
+// Desafio 10 - OK - Crie uma função de Lista de Tecnologias
 function techList(techs, nomes) {
-  
   let alfabetica = [];
   alfabetica = techs.sort();
 
@@ -19,8 +18,7 @@ function techList(techs, nomes) {
 return enteresses;
 }
 
-
-// Desafio 11
+// Desafio 11 - OK - Crie uma função de Número de Telefone
 function generatePhoneNumber(telefone) {
   let numeroTelefone = '';
   
@@ -45,10 +43,9 @@ function generatePhoneNumber(telefone) {
   } 
   numeroTelefone = '('+ telefone[0] + telefone[1] + ') ' + telefone[2] + telefone[3] + telefone[4] + telefone[5] + telefone[6] + '-' + telefone[7] + telefone[8] + telefone[9] + telefone[10];
   return numeroTelefone
-}
+};
 
-
-// Desafio 12
+// Desafio 12 - OK - Crie uma função de Condição de existência de um triângulo
 function triangleCheck(lineA, lineB, lineC) {
   let veriLineA = lineB +lineC;
   let veriLineB = lineA + lineC;
@@ -66,7 +63,8 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 
-// Desafio 13. Referências:
+// Desafio 13 - OK - Crie uma função de boas vindas ao Bar da Trybe!
+// Referências:
 // https://stackoverflow.com/questions/1623221/how-to-find-a-number-in-a-string-using-javascript
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes
