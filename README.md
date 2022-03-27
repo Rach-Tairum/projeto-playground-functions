@@ -1,12 +1,12 @@
-### Projeto Playground Functions
+# Projeto Playground Functions
 
-# O Projeto:
+### O Projeto:
 
 Este projeto foi desenvolvido para aplicação dos conhecimentos adquiridos sobre JavaScript durante o curso da Trybe no módulo de fundamentos, nele deveriamos desenvolver funções simples para resolução de problemas matemáticos, em sua maioria, aplicando diversos conceitos e ferramentas da linguagem JS. 
 
 As propostas de funções foram desenvolvidas pela Trybe e seu time de instrução para melhor avaliação do desenvolvimentos dos alunos.
 
-# Habilidades
+### Habilidades
 
 - JavaScript
 
